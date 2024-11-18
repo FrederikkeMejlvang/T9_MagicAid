@@ -1,5 +1,5 @@
 ---
-
+import "../css/global.css"
 ---
 
 <html lang="en">
@@ -11,6 +11,240 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header class="Header">
+			<div class="Logo"><img src="/img/SVG/Logo.svg" alt="Logo" class="Logo"/></div>
+			<div class="navigation">
+			<!-- De skal ikke være klikbare eller noget, det skal bare ligne at den side vi er på er aktiv? måske have hover effekt	 -->
+			 <ul>
+				<li>Om KidsAid</li>
+				<li>Indsamling</li>
+				<li>For Børnene</li>
+				<li>Nyhedsbrev</li>
+				<li>Kontakt Os</li>
+				<li class="DonerKnap">Doner her</li>
+			 </ul>
+			</div>			
+		</header>
+
+		<section class="Hero_section">
+			<div class="HeroText">
+				<div><h1>Magic Aid</h1></div>
+				<div><p>MagicAid er KidsAid talentfulde tryllekunstnere der hver dag prøver at skabe magi og leg i sårbare børns hverdag. Donér til MagicAid og vær med til at sikre, at magien aldrig forsvinder, fordi alle børn fortjener at opleve glæde og fortryllelse, selv når livet er svært.</p></div>
+				<div class="Button">Doner her</div>
+			</div>
+			<div class="HeroGraphic">
+				<img src="/img/SVG/Hero_girl.svg" alt="hero Graphic of girl flying" class="HeroImg">
+			</div>
+			
+		</section>
+
+		<!-- 
+		Den her section er gul baggrund vektor 
+		 -->
+		<section class="BigYellow">
+		<section class="MereInfo_section">
+			
+			<div class="grid-1_1">
+				<div><img src="/public/img/Dummy.jpg" alt="Dummy"/></div>
+				<div>
+					<div><h3>Om Os og Vores Mål</h3></div>
+					<div><p>Magic Aid er en velgørende organisation, som er drevet af en simpel, men stærk mission: at bringe lys, håb og glæde til børn, der står over for store udfordringer. Gennem magiske forestillinger, trylleshows og særlige oplevelser skaber Magic Aid et frirum, hvor børn kan glemme hverdagens bekymringer og træde ind i en verden fyldt med fantasi og forundring.</p></div>
+				</div>
+		   </div>
+
+			<div class="grid-1_1">
+				<div><p>Når et barn bliver alvorligt syg, rammes hele familien, og derfor sætter vi fokus på at skabe unikke oplevelser for både barnet, søskende og forældre. Vi gør det muligt for familierne at være sammen om positive øjeblikke og få oplevelser, de kan mindes længe efter. Organisationens mål er at skabe små magiske øjeblikke, der kan løfte humøret og inspirere børn og voksne til tro på fremtiden.</p></div>
+				<div><img src="/public/img/Dummy.jpg" alt="Dummy"/></div>
+				
+			</div>
+
+		</section>
+	</section>
+
+		<section class="gallainfo_section">
+			
+			<div><h3>Kom Med til en Magisk Charity Aften</h3></div>
+			<div class="grid-1_1">
+			<div class="GallaText">
+				<div><p>Kom med til Magic Charity den 1. november 2024 på The Plant i København, hvor vi byder på en luksuriøs 3-retters menu, udsøgte vine, fantastisk underholdning og et afterparty, der holder festen kørende til langt ud på aftenen.
+					Magic Charity er en helt særlig velgørenhedsbegivenhed, hvor formålet er at samle penge ind til fordel for syge og sårbare børn i Danmark. </p></div>
+				<div class="Button">Køb Billet</div>
+			</div>
+			<div><img src="/public/img/Dummy.jpg" alt="Dummy"/></div>
+		</div>
+
+		</section>
+
+		<!-- Den her section er lilla baggrund vektor -->
+		<section class="MotionGraphic_section">
+			
+			<div><h1 class="CenterText">Alle born fortjener en Magisk hverdag</h1></div>
+			<div>Motion Graphic</div>
+		</section>
+
+		<section class="OmTryllekunstnere_section">
+			
+			<div><img src="/public/img/SVG/Magicians.svg" alt="Grafik af tryllekunstnere"/></div>
+			<div class="tryllekunstnertext">
+			<div><h3>Vores Tryllekunstnere</h3></div>
+			<div><p>KidsAids tryllekunstnere bringer et glimt af eventyr og magi til enhver af de sårbare børns øjne. Med vores tryllekunstnere kan vi forvandle hospitalsophold og sygdomsforløb til oplevelser fyldt med latter og magiske øjeblikke. Det er en uvurderlig gave til børnene og en påmindelse om, at der stadig findes magi og glæde, selv i svære tider.</p></div>
+		</div>
+		</section>
+
+		<!-- Den her section er gul baggrund vektor -->
+		<section class="Joinmagi_section">
+		
+			<h3>Bliv tryllekunstner for Magic Aid</h3>
+			<p>Har du en passion for at fortrylle og skabe glæde? Bliv tryllekunstner for Magic Aid og gør en forskel i børns liv! Hos MagicAid skaber vi magiske øjeblikke for børn på hospitaler og til KidsAids arrangementer over hele landet. Bliv en del af MagicAid-teamet, og vær med til at gøre en forskel for syge og sårbare børn i Danmark.</p>
+			<div class="Button">Læs Mere Her</div>
+		</section>
+
+		<section class="Instaopslag_section">
+			<div class="CenterText"><h2>Find mere trylleri på vores Instagram</h2></div>
+			<div class="instaOpslag">
+				<div><img src="/img/SVG/Insta1.svg"/></div>
+				<div><img src="/img/SVG/Insta2.svg"/></div>
+				<div><img src="/img/SVG/Insta3.svg"/></div>
+				<div><img src="/img/SVG/3.svg"/></div>
+			</div>
+		</section>
+
+		<!-- Footer er lille vektor baggrund -->
+		<footer>
+			<div><img src="/img/SVG/KidsAidlogo.svg"/></div>
+			<div class="footertext">
+			<div>
+				<h4>Om Os</h4>
+				<p>Nyheder</p>
+				<p>KidsAid Ambassadører</p>
+				<p>KidsAid Organisation</p>
+			</div>
+			<div>
+				<h4>Kontakt Os</h4>
+				<p>Emma Iben Rosenkrantz Holm:</p>
+				<p>EB@KidsAid.dk</p>
+				<p>TLF: +45 2025 1987</p>
+			</div>
+			<div>
+				<h4>Regnskaber</h4>
+				<p>Overskudserklæring 2021</p>
+				<p>Ledelsesberetning 2022</p>
+				<p>Indsamlingsregnskaber 2023</p>
+				<p>Årsrapport 2022</p>
+			</div>
+		</div>
+		<div class="socialmedia"><img src="/img/SVG/socialmediaicons.svg"/></div>
+		</footer>
+
+<style>
+	
+
+	.Hero_section{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.grid-1_1{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+	}
+
+	.Button {
+		background-color: var(--gul-mørk);
+		padding: 10px 20px;
+		border-radius: 20px;
+		font-weight: 550;
+		transition: box-shadow 0.3s ease, transform 0.3s ease;
+		cursor: pointer; 
+	}
+
+	.Button:hover {
+		box-shadow: 0 0 20px 5px rgba(252, 216, 118, 0.868); 
+		transform: scale(1.05);
+	}
+
+	.CenterText{
+		text-align: Center;
+	}
+
+	.OmTryllekunstnere_section{
+		text-align: center;
+	}
+
+	.tryllekunstnertext{
+		margin-left: 10em;
+		margin-right: 10em;
+	}
+	.Logo {
+		width: 100px;
+	}
+
+	header ul li {
+		list-style: none;
+		display: inline;
+		gap: 2em;
+		font-family: ;
+	}
+
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 2em;
+	}
+
+	.DonerKnap{
+		background-color: var(--gul-mørk);
+		padding: 10px 20px;
+		border-radius: 20px;
+		font-weight: 550;
+		transition: box-shadow 0.3s ease, transform 0.3s ease;
+		cursor: pointer; 
+	}
+
+	.DonerKnap:hover {
+		box-shadow: 0 0 20px 5px rgba(252, 216, 118, 0.868); 
+		transform: scale(1.05);
+	}
+
+	.instaOpslag{
+		display: flex;
+		flex-direction: row;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+	}
+
+	
+	.footertext{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.footertext div {
+		text-align: center;
+	}
+
+	.BigYellow {
+		background-image: url('public/img/SVG/SectionYWbig-1.png');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+	section {
+		margin-top: 2em;
+	}
+
+	</style>
+
 	</body>
 </html>

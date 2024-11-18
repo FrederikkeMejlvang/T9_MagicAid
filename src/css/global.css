@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caramel";
+  src: url("fonts/Caramel-Regular.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -31,6 +47,7 @@ html {
   --font-size-h1: 128px;
   --font-size-h2: 64px;
   --font-size-h3: 40px;
+  --font-size-h4: 28px;
   --font-size-p-hero: 24px;
   --font-size-p-bold: 20px;
   --font-size-p: 20px;
@@ -38,15 +55,17 @@ html {
   --font-size-h2-mobile: 20px;
   --font-size-p-mobile: 20px;
 
-  --line-height-96: 96;
-  --line-height-45: 45;
-  --line-height-40: 40;
-  --line-height-30: 30;
+  --line-height-96: 96px;
+  --line-height-45: 45px;
+  --line-height-40: 40px;
+  --line-height-30: 30px;
 }
 
 body {
   background-color: var(--blå-light);
   color: var(--lilla-dark);
+  margin-right: 240px;
+  margin-left: 240px;
 }
 
 /*Font Family*/
@@ -58,7 +77,9 @@ h1.mobile {
 h2,
 h2.mobile,
 h3,
+h4,
 p,
+li,
 p.bold,
 p.hero,
 p.mobile,
@@ -94,9 +115,15 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-45);
+  font-weight: 600;
+}
+
 p {
   font-size: var(--font-size-p);
-  line-height: var(--line-height-40);
+  line-height: var(--line-height-30);
 }
 
 p.bold {
