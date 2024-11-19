@@ -11,6 +11,7 @@ import "../css/global.css"
 		<title>Astro</title>
 	</head>
 	<body>
+	
 		<header class="Header">
 			<div class="Logo"><img src="/img/SVG/Logo.svg" alt="Logo" class="Logo"/></div>
 			<div class="navigation">
@@ -26,6 +27,30 @@ import "../css/global.css"
 			</div>			
 		</header>
 
+
+		<div class="Sparklebig1"></div>
+		<div class="Sparklebig2"></div>
+		<div class="Sparkle1"></div>
+		<div class="Sparkle2"></div>
+		<div class="Sparkle3"></div>
+		<div class="Sparkle4"></div>
+		<div class="Sparkle5"></div>
+		<div class="Sparkle6"></div>
+		<div class="Sparkle7"></div>
+		<div class="Sparkle8"></div>
+
+
+
+		<div class="SectionYWbig"></div>
+		<div class="SectionPRPLbig"></div>
+		<div class="SectionYWsmall"></div>
+		<div class="SectionPRPLfooter"></div>
+
+		
+
+
+<main>
+
 		<section class="Hero_section">
 			<div class="HeroText">
 				<div><h1>Magic Aid</h1></div>
@@ -38,14 +63,16 @@ import "../css/global.css"
 			
 		</section>
 
+		
+
 		<!-- 
 		Den her section er gul baggrund vektor 
 		 -->
-		<section class="BigYellow">
+		
 		<section class="MereInfo_section">
 			
 			<div class="grid-1_1">
-				<div><img src="/public/img/Dummy.jpg" alt="Dummy"/></div>
+				<div><img src="/public/img/SVG/GirlBunny.svg" alt="Pige der krammer kanin bamse"/></div>
 				<div>
 					<div><h3>Om Os og Vores Mål</h3></div>
 					<div><p>Magic Aid er en velgørende organisation, som er drevet af en simpel, men stærk mission: at bringe lys, håb og glæde til børn, der står over for store udfordringer. Gennem magiske forestillinger, trylleshows og særlige oplevelser skaber Magic Aid et frirum, hvor børn kan glemme hverdagens bekymringer og træde ind i en verden fyldt med fantasi og forundring.</p></div>
@@ -54,12 +81,12 @@ import "../css/global.css"
 
 			<div class="grid-1_1">
 				<div><p>Når et barn bliver alvorligt syg, rammes hele familien, og derfor sætter vi fokus på at skabe unikke oplevelser for både barnet, søskende og forældre. Vi gør det muligt for familierne at være sammen om positive øjeblikke og få oplevelser, de kan mindes længe efter. Organisationens mål er at skabe små magiske øjeblikke, der kan løfte humøret og inspirere børn og voksne til tro på fremtiden.</p></div>
-				<div><img src="/public/img/Dummy.jpg" alt="Dummy"/></div>
+				<div><img src="/public/img/SVG/MagicChild.svg" alt="Billede af barn med der tryller"/></div>
 				
 			</div>
 
 		</section>
-	</section>
+
 
 		<section class="gallainfo_section">
 			
@@ -70,7 +97,7 @@ import "../css/global.css"
 					Magic Charity er en helt særlig velgørenhedsbegivenhed, hvor formålet er at samle penge ind til fordel for syge og sårbare børn i Danmark. </p></div>
 				<div class="Button">Køb Billet</div>
 			</div>
-			<div><img src="/public/img/Dummy.jpg" alt="Dummy"/></div>
+			<div><img src="/public/img/SVG/galla.svg" alt="Billede fra Galla"/></div>
 		</div>
 
 		</section>
@@ -78,8 +105,8 @@ import "../css/global.css"
 		<!-- Den her section er lilla baggrund vektor -->
 		<section class="MotionGraphic_section">
 			
-			<div><h1 class="CenterText">Alle born fortjener en Magisk hverdag</h1></div>
-			<div>Motion Graphic</div>
+			<div><h2 class="CenterText">Alle børn fortjener en Magisk hverdag</h2></div>
+			<div><img src="/img/Dummy.jpg" alt="dummy"/></div>
 		</section>
 
 		<section class="OmTryllekunstnere_section">
@@ -102,12 +129,16 @@ import "../css/global.css"
 		<section class="Instaopslag_section">
 			<div class="CenterText"><h2>Find mere trylleri på vores Instagram</h2></div>
 			<div class="instaOpslag">
-				<div><img src="/img/SVG/Insta1.svg"/></div>
-				<div><img src="/img/SVG/Insta2.svg"/></div>
-				<div><img src="/img/SVG/Insta3.svg"/></div>
-				<div><img src="/img/SVG/3.svg"/></div>
+				<div><img src="/img/SVG/Insta1.svg" class="insta"/></div>
+				<div><img src="/img/SVG/Insta2.svg" class="insta"/></div>
+				<div><img src="/img/SVG/Insta3.svg" class="insta"/></div>
+				<div><img src="/img/SVG/Insta4.svg" class="insta"/></div>
 			</div>
 		</section>
+
+	</main>
+
+	
 
 		<!-- Footer er lille vektor baggrund -->
 		<footer>
@@ -135,30 +166,81 @@ import "../css/global.css"
 		</div>
 		<div class="socialmedia"><img src="/img/SVG/socialmediaicons.svg"/></div>
 		</footer>
+	</body>
 
 <style>
-	
+
+
+
+.insta:hover{
+	transform: scale(1.05);
+	transition: ease-in-out 0.2s;
+	cursor: pointer;
+}
+
 
 	.Hero_section{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 3fr 5fr;
 		justify-content: center;
 		align-items: center;
+		gap:2em;
+		z-index: 20;
+		padding-bottom: 5em;
+	}
+
+		.MereInfo_section {
+		padding-top: 5em;
+		padding-bottom: 5em;
+		z-index: 100;
+	}
+	
+	.gallainfo_section{
+		padding-bottom: 3em;
+		padding-top: 1em;
+	}
+
+	.MotionGraphic_section{
+		padding-top: 4em;
+		padding-bottom: 6em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.OmTryllekunstnere_section{
+		text-align: center;
+		padding-top: 5em;
+	}
+
+	.Joinmagi_section{
+		padding-top: 7em;
+		padding-bottom: 2em;
+	}
+
+	.Instaopslag_section{
+		padding-top: 2em;
 	}
 
 	.grid-1_1{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 2em;
+		align-items: center;
 	}
 
 	.Button {
 		background-color: var(--gul-mørk);
-		padding: 10px 20px;
-		border-radius: 20px;
+		padding: 15px 40px;
+		border-radius: 30px;
 		font-weight: 550;
 		transition: box-shadow 0.3s ease, transform 0.3s ease;
 		cursor: pointer; 
+		 font-family: "Poppins";
+		 display: inline-block;
+		 font-weight: 600;
+		
 	}
 
 	.Button:hover {
@@ -170,39 +252,46 @@ import "../css/global.css"
 		text-align: Center;
 	}
 
-	.OmTryllekunstnere_section{
-		text-align: center;
-	}
+	
 
 	.tryllekunstnertext{
 		margin-left: 10em;
 		margin-right: 10em;
 	}
 	.Logo {
-		width: 100px;
+		width: 150px;
+
 	}
 
 	header ul li {
 		list-style: none;
 		display: inline;
-		gap: 2em;
-		font-family: ;
+		margin-left: 1em;
+		margin-right: 1em;
+		cursor:pointer;
+	}
+
+	header ul li:hover {
+		color: var(--lilla-light);
+		border-bottom: 2px solid var(--lilla-light);
+		padding-bottom: 2px;
 	}
 
 	header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 2em;
+		align-items: center;
 	}
 
 	.DonerKnap{
 		background-color: var(--gul-mørk);
-		padding: 10px 20px;
-		border-radius: 20px;
-		font-weight: 550;
+		padding: 15px 40px;
+		border-radius: 30px;
+		font-weight: 600;
 		transition: box-shadow 0.3s ease, transform 0.3s ease;
 		cursor: pointer; 
+
 	}
 
 	.DonerKnap:hover {
@@ -215,34 +304,204 @@ import "../css/global.css"
 		flex-direction: row;
 	}
 
+
+
 	footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		color: white;
+		padding-top: 12em;
+	
 	}
 
 	
 	.footertext{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
 
 	.footertext div {
 		text-align: center;
 	}
 
-	.BigYellow {
-		background-image: url('public/img/SVG/SectionYWbig-1.png');
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
+
 	
 	section {
-		margin-top: 2em;
+		margin-top: 3em;
 	}
+
+	
+.Sparklebig1{
+	background-image: url('/img/SVG/Sparklebig1.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 120px; 
+    height: 120px; 
+    position: absolute; 
+    top: 200px; 
+    left: 100px; 
+    z-index: 10;}
+
+	.Sparklebig2{
+	background-image: url('/img/SVG/Sparklebig2.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 120px; 
+    height: 120px; 
+    position: absolute; 
+    top: 750px; 
+    right: 100px; 
+    z-index: 10;}
+
+	.Sparkle1 {
+		background-image: url('/img/SVG/Sparklesolo1.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 120px; 
+    height: 120px; 
+    position: absolute; 
+    top: 1880px; 
+    right: 150px; 
+    z-index: 10;
+	}
+
+	.Sparkle2 {
+		background-image: url('/img/SVG/Sparkletriple1.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 80px; 
+    height: 80px; 
+    position: absolute; 
+    top: 1950px; 
+    right: 120px; 
+    z-index: 10;
+	}
+
+	.Sparkle3{
+	background-image: url('/img/SVG/Sparklesolo2.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 120px; 
+    height: 120px; 
+    position: absolute; 
+    top: 2360px; 
+    left: 140px; 
+    z-index: 10;}
+
+	.Sparkle4{
+	background-image: url('/img/SVG/Sparkletriple2.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 80px; 
+    height: 80px; 
+    position: absolute; 
+    top: 2300px; 
+    left: 100px; 
+    z-index: 10;}
+
+	.Sparkle5{
+	background-image: url('/img/SVG/Sparklebig1.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 200px; 
+    height: 200px; 
+    position: absolute; 
+    top: 3100px; 
+    left: 100px; 
+    z-index: 10;}
+
+	.Sparkle6{
+	background-image: url('/img/SVG/Sparklebig2.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 200px; 
+    height: 200px; 
+    position: absolute; 
+    top: 2700px; 
+    right: 100px; 
+    z-index: 10;}
+
+	.Sparkle7{
+	background-image: url('/img/SVG/Sparkletriple1.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 120px; 
+    height: 120px; 
+    position: absolute; 
+    top: 4900px; 
+    right: 100px; 
+    z-index: 10;}
+
+	.Sparkle8{
+	background-image: url('/img/SVG/Sparkletriple2.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 120px; 
+    height: 120px; 
+    position: absolute; 
+    top: 5500px; 
+    left: 100px; 
+    z-index: 10;}
+
+
+	
+.SectionYWbig {
+	background-image: url('/img/SVG/SectionYWbig.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+	object-fit: fill;
+    width: 1690px; 
+    height: 1075px; 
+    position: absolute; 
+    top: 860px; 
+    left:0px; 
+    z-index: -1;	
+	opacity: 70%;
+}
+	
+.SectionPRPLbig{
+	background-image: url('/img/SVG/SectionPRPL.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+	object-fit: fill;
+    width: 1690px; 
+    height: 1100px; 
+    position: absolute; 
+    top: 2450px; 
+    left:0px; 
+    z-index: -1;	
+	opacity: 70%;
+}
+
+.SectionYWsmall{
+	background-image: url('/img/SVG/SectionYWsmall.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+	object-fit: fill;
+    width: 1690px; 
+    height: 1075px; 
+    position: absolute; 
+    top: 4350px; 
+    left:0px; 
+    z-index: -1;	
+	opacity: 70%;
+}
+
+.SectionPRPLfooter {
+	background-image: url('/img/SVG/SectionPRPLfooter.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+	object-fit: fill;
+    width: 1690px; 
+    height: 1110px; 
+    position: absolute; 
+    top: 5550px; 
+    left:0px; 
+    z-index: -1;	
+	opacity: 70%;
+}
 
 	</style>
 

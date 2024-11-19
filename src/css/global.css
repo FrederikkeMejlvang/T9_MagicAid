@@ -61,11 +61,15 @@ html {
   --line-height-30: 30px;
 }
 
-body {
-  background-color: var(--blå-light);
+main {
   color: var(--lilla-dark);
   margin-right: 240px;
   margin-left: 240px;
+}
+
+body {
+  background-color: var(--blå-light);
+  color: var(--lilla-dark);
 }
 
 /*Font Family*/
@@ -79,6 +83,7 @@ h2.mobile,
 h3,
 h4,
 p,
+a,
 li,
 p.bold,
 p.hero,
@@ -89,6 +94,7 @@ a {
 
 h1 {
   font-size: var(--font-size-h1);
+  line-height: var(--line-height-30);
 }
 
 /*Font Size & Weight*/
