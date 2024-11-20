@@ -8,7 +8,11 @@ import "../css/global.css"
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>MagicAid</title>
+		<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+
+
+
 	</head>
 	<body>
 	
@@ -106,7 +110,8 @@ import "../css/global.css"
 		<section class="MotionGraphic_section">
 			
 			<div><h2 class="CenterText">Alle børn fortjener en Magisk hverdag</h2></div>
-			<div><img src="/img/Dummy.jpg" alt="dummy"/></div>
+			<div> 
+				<dotlottie-player src="https://lottie.host/75b2ed5f-744e-4430-a9ad-3c8a2adaa6a7/jcxvfXao8W.json" background="transparent" speed="1" class="Lottie" loop autoplay></dotlottie-player></div>
 		</section>
 
 		<section class="OmTryllekunstnere_section">
@@ -142,7 +147,6 @@ import "../css/global.css"
 
 		<!-- Footer er lille vektor baggrund -->
 		<footer>
-			<div><img src="/img/SVG/KidsAidlogo.svg"/></div>
 			<div class="footertext">
 			<div>
 				<h4>Om Os</h4>
@@ -304,6 +308,10 @@ import "../css/global.css"
 		flex-direction: row;
 	}
 
+	.Lottie {
+		width:50vw;
+		border-radius: 20px;
+	}
 
 
 	footer {
@@ -311,7 +319,7 @@ import "../css/global.css"
 		flex-direction: column;
 		align-items: center;
 		color: white;
-		padding-top: 12em;
+		padding-top: 15em;
 	
 	}
 
@@ -337,33 +345,33 @@ import "../css/global.css"
 	background-image: url('/img/SVG/Sparklebig1.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 120px; 
-    height: 120px; 
+    width: 6vw; 
+    height: 6vw; 
     position: absolute; 
     top: 200px; 
-    left: 100px; 
+    left: 10vw; 
     z-index: 10;}
 
 	.Sparklebig2{
 	background-image: url('/img/SVG/Sparklebig2.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 120px; 
-    height: 120px; 
+	width: 6vw; 
+    height: 6vw; 
     position: absolute; 
     top: 750px; 
-    right: 100px; 
+    right: 10vw; 
     z-index: 10;}
 
 	.Sparkle1 {
 		background-image: url('/img/SVG/Sparklesolo1.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 120px; 
-    height: 120px; 
+	width: 6vw; 
+    height: 6vw;  
     position: absolute; 
     top: 1880px; 
-    right: 150px; 
+    right: 15vw; 
     z-index: 10;
 	}
 
@@ -375,7 +383,7 @@ import "../css/global.css"
     height: 80px; 
     position: absolute; 
     top: 1950px; 
-    right: 120px; 
+    right: 12vw; 
     z-index: 10;
 	}
 
@@ -383,76 +391,76 @@ import "../css/global.css"
 	background-image: url('/img/SVG/Sparklesolo2.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 120px; 
-    height: 120px; 
+	width: 6vw; 
+    height: 6vw;  
     position: absolute; 
     top: 2360px; 
-    left: 140px; 
+    left: 10vw; 
     z-index: 10;}
 
 	.Sparkle4{
 	background-image: url('/img/SVG/Sparkletriple2.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 80px; 
-    height: 80px; 
+    width: 5vw; 
+    height: 5vw; 
     position: absolute; 
     top: 2300px; 
-    left: 100px; 
+    left: 7vw; 
     z-index: 10;}
 
 	.Sparkle5{
 	background-image: url('/img/SVG/Sparklebig1.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 200px; 
-    height: 200px; 
+    width: 8vw; 
+    height: 8vw; 
     position: absolute; 
     top: 3100px; 
-    left: 100px; 
+    left: 6vw; 
     z-index: 10;}
 
 	.Sparkle6{
 	background-image: url('/img/SVG/Sparklebig2.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 200px; 
-    height: 200px; 
+	width: 8vw; 
+    height: 8vw; 
     position: absolute; 
     top: 2700px; 
-    right: 100px; 
+    right: 6vw; 
     z-index: 10;}
 
 	.Sparkle7{
 	background-image: url('/img/SVG/Sparkletriple1.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 120px; 
-    height: 120px; 
+	width: 6vw; 
+    height: 6vw;  
     position: absolute; 
     top: 4900px; 
-    right: 100px; 
+    right: 6vw; 
     z-index: 10;}
 
 	.Sparkle8{
 	background-image: url('/img/SVG/Sparkletriple2.svg'); 
     background-size: contain; 
     background-repeat: no-repeat; 
-    width: 120px; 
-    height: 120px; 
+	width: 6vw; 
+    height: 6vw; 
     position: absolute; 
     top: 5500px; 
-    left: 100px; 
+    left: 6vw; 
     z-index: 10;}
 
 
 	
 .SectionYWbig {
 	background-image: url('/img/SVG/SectionYWbig.png'); 
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat; 
 	object-fit: fill;
-    width: 1690px; 
+	width: 100vw;
     height: 1075px; 
     position: absolute; 
     top: 860px; 
@@ -463,10 +471,10 @@ import "../css/global.css"
 	
 .SectionPRPLbig{
 	background-image: url('/img/SVG/SectionPRPL.png'); 
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat; 
 	object-fit: fill;
-    width: 1690px; 
+    width: 100vw; 
     height: 1100px; 
     position: absolute; 
     top: 2450px; 
@@ -477,13 +485,13 @@ import "../css/global.css"
 
 .SectionYWsmall{
 	background-image: url('/img/SVG/SectionYWsmall.png'); 
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat; 
 	object-fit: fill;
-    width: 1690px; 
-    height: 1075px; 
+    width: 100vw; 
+    height: 550px; 
     position: absolute; 
-    top: 4350px; 
+    top: 4370px; 
     left:0px; 
     z-index: -1;	
 	opacity: 70%;
@@ -491,10 +499,10 @@ import "../css/global.css"
 
 .SectionPRPLfooter {
 	background-image: url('/img/SVG/SectionPRPLfooter.png'); 
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat; 
 	object-fit: fill;
-    width: 1690px; 
+    width: 100vw; 
     height: 1110px; 
     position: absolute; 
     top: 5550px; 
@@ -503,7 +511,182 @@ import "../css/global.css"
 	opacity: 70%;
 }
 
-	</style>
+@media (max-width:1500px) {
+	main {
+		margin-left: 190px;
+		margin-right: 190px;
+	}
 
-	</body>
-</html>
+	section {
+		margin-top: 1em;
+	}
+
+
+}
+
+@media (max-width:1130px){
+	.instaOpslag {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+}
+
+@media (max-width:970px) {
+
+	.Hero_section {
+		display: flex;
+		flex-direction: column;
+	}
+	.grid-1_1{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.SectionYWbig {
+		height: 1900px;
+		top: 1200px;
+	}
+
+	.SectionPRPLbig {
+		top: 3800px;
+	}
+
+	.Lottie {
+		width: 90vw;
+	}
+
+	.SectionYWsmall {
+		top: 5600px;
+	}
+
+	.SectionPRPLfooter {
+		top: 7450px;
+	}
+}
+
+
+@media (max-width:500px) {
+main {
+	margin: 10px;
+}
+
+.Hero_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+h1 {
+font-size: 100px;
+}
+
+
+.grid-1_1 {
+display: flex;
+flex-direction: column;
+
+}
+
+.Lottie  {
+	width: 90vw;
+}
+
+.OmTryllekunstnere_section {
+
+}
+
+.tryllekunstnertext{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.instaOpslag {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.footertext {
+		display: flex;
+		flex-direction: column;
+		padding-top:2em;
+	}
+
+	.SectionYWbig {
+		top: 1050px;
+		height: 1900px;
+	}
+
+	.SectionPRPLbig{
+		top:3800px;
+		height: 1000px;
+	}
+
+	.SectionYWsmall {
+		top: 5450px;
+		height: 800px;
+	}
+
+	.SectionPRPLfooter{
+		top: 7300px;
+		height: 1350px;
+	}
+
+	.Sparklebig1 {
+		width: 60px;
+		height: 60px;
+		top: 150px;
+		left: 20px;
+	}
+
+	.Sparklebig2 {
+		width: 60px;
+		height: 60px;
+		top: 650px;
+		right: 20px;
+	}
+
+	.Sparkle1 {
+		display: none;
+	}
+
+	.Sparkle2 {
+		width: 60px;
+		height: 60px;
+		left: 10px;
+		top: 2650px;
+	}
+
+	.Sparkle3 {
+		display:none;}
+
+	.Sparkle4 {
+		display: none;
+	}
+
+	.Sparkle5 {
+		display: none;
+	}
+
+	.Sparkle6{
+		width: 60px;
+		height: 60px;
+		right: 10px;
+		top: 2760px;
+	}
+
+	.Sparkle7 {
+		display:none;
+	}
+
+	.Sparkle8 {
+		display:none;
+	}
+
+}
