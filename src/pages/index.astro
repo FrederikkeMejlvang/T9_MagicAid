@@ -21,11 +21,11 @@ import "../css/global.css"
 			<div class="navigation">
 			<!-- De skal ikke være klikbare eller noget, det skal bare ligne at den side vi er på er aktiv? måske have hover effekt	 -->
 			 <ul>
-				<li>Om KidsAid</li>
-				<li>Indsamling</li>
-				<li>For Børnene</li>
-				<li>Nyhedsbrev</li>
-				<li>Kontakt Os</li>
+				<li class="item">Om KidsAid</li>
+				<li class="item">Indsamling</li>
+				<li class="item">For Børnene</li>
+				<li class="item">Nyhedsbrev</li>
+				<li class="item">Kontakt Os</li>
 				<li class="DonerKnap">Doner her</li>
 			 </ul>
 			</div>			
@@ -45,10 +45,10 @@ import "../css/global.css"
 
 
 
-		<div class="SectionYWbig"></div>
+		<!--<div class="SectionYWbig"></div>
 		<div class="SectionPRPLbig"></div>
 		<div class="SectionYWsmall"></div>
-		<div class="SectionPRPLfooter"></div>
+		<div class="SectionPRPLfooter"></div> -->
 
 		
 
@@ -74,7 +74,7 @@ import "../css/global.css"
 		 -->
 		
 		<section class="MereInfo_section">
-			
+			<div class="body_grid">
 			<div class="grid-1_1">
 				<div><img src="/public/img/SVG/GirlBunny.svg" alt="Pige der krammer kanin bamse"/></div>
 				<div>
@@ -87,12 +87,15 @@ import "../css/global.css"
 				<div><p>Når et barn bliver alvorligt syg, rammes hele familien, og derfor sætter vi fokus på at skabe unikke oplevelser for både barnet, søskende og forældre. Vi gør det muligt for familierne at være sammen om positive øjeblikke og få oplevelser, de kan mindes længe efter. Organisationens mål er at skabe små magiske øjeblikke, der kan løfte humøret og inspirere børn og voksne til tro på fremtiden.</p></div>
 				<div><img src="/public/img/SVG/MagicChild.svg" alt="Billede af barn med der tryller"/></div>
 				
-			</div>
+		</div>
+	</div>
+
 
 		</section>
 
 
 		<section class="gallainfo_section">
+			<div class="body_grid">
 			
 			<div><h3>Kom Med til en Magisk Charity Aften</h3></div>
 			<div class="grid-1_1">
@@ -103,21 +106,22 @@ import "../css/global.css"
 			</div>
 			<div><img src="/public/img/SVG/galla.svg" alt="Billede fra Galla"/></div>
 		</div>
-
+</div>
 		</section>
 
 		<!-- Den her section er lilla baggrund vektor -->
 		<section class="MotionGraphic_section">
+			<div class="body_grid">
 			
-			<div><h2 class="CenterText">Alle børn fortjener en Magisk hverdag</h2></div>
+			<div><h3 class="CenterText">Alle børn fortjener en Magisk hverdag</h3></div>
 			<div> 
 				<dotlottie-player src="https://lottie.host/75b2ed5f-744e-4430-a9ad-3c8a2adaa6a7/jcxvfXao8W.json" background="transparent" speed="1" class="Lottie" loop autoplay></dotlottie-player></div>
+				</div>
 		</section>
 
 		<section class="OmTryllekunstnere_section">
-			
-			<div><img src="/public/img/SVG/Magicians.svg" alt="Grafik af tryllekunstnere"/></div>
-			<div class="tryllekunstnertext">
+			<div class="body_grid">
+			<div><img src="/public/img/SVG/Magicians.svg" alt="Grafik af tryllekunstnere" class="trylleimg"/></div>
 			<div><h3>Vores Tryllekunstnere</h3></div>
 			<div><p>KidsAids tryllekunstnere bringer et glimt af eventyr og magi til enhver af de sårbare børns øjne. Med vores tryllekunstnere kan vi forvandle hospitalsophold og sygdomsforløb til oplevelser fyldt med latter og magiske øjeblikke. Det er en uvurderlig gave til børnene og en påmindelse om, at der stadig findes magi og glæde, selv i svære tider.</p></div>
 		</div>
@@ -125,19 +129,22 @@ import "../css/global.css"
 
 		<!-- Den her section er gul baggrund vektor -->
 		<section class="Joinmagi_section">
-		
+			<div class="body_grid">
 			<h3>Bliv tryllekunstner for Magic Aid</h3>
 			<p>Har du en passion for at fortrylle og skabe glæde? Bliv tryllekunstner for Magic Aid og gør en forskel i børns liv! Hos MagicAid skaber vi magiske øjeblikke for børn på hospitaler og til KidsAids arrangementer over hele landet. Bliv en del af MagicAid-teamet, og vær med til at gøre en forskel for syge og sårbare børn i Danmark.</p>
 			<div class="Button">Læs Mere Her</div>
+			</div>
 		</section>
 
 		<section class="Instaopslag_section">
-			<div class="CenterText"><h2>Find mere trylleri på vores Instagram</h2></div>
+			<div class="body_grid">
+			<div class="CenterText"><h3>Find mere trylleri på vores Instagram</h3></div>
 			<div class="instaOpslag">
 				<div><img src="/img/SVG/Insta1.svg" class="insta"/></div>
 				<div><img src="/img/SVG/Insta2.svg" class="insta"/></div>
 				<div><img src="/img/SVG/Insta3.svg" class="insta"/></div>
 				<div><img src="/img/SVG/Insta4.svg" class="insta"/></div>
+			</div>
 			</div>
 		</section>
 
@@ -190,23 +197,19 @@ import "../css/global.css"
 		align-items: center;
 		gap:2em;
 		z-index: 20;
-		padding-bottom: 5em;
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-bottom: 100px;
+		margin-top: 100px;
 	}
 
 		.MereInfo_section {
-		padding-top: 5em;
-		padding-bottom: 5em;
+		background-color: var(--gul-light);
 		z-index: 100;
-	}
-	
-	.gallainfo_section{
-		padding-bottom: 3em;
-		padding-top: 1em;
 	}
 
 	.MotionGraphic_section{
-		padding-top: 4em;
-		padding-bottom: 6em;
+		background-color: var(--lilla-light);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -215,16 +218,14 @@ import "../css/global.css"
 
 	.OmTryllekunstnere_section{
 		text-align: center;
-		padding-top: 5em;
+	}
+
+	.trylleimg{
+		padding-bottom: 40px;
 	}
 
 	.Joinmagi_section{
-		padding-top: 7em;
-		padding-bottom: 2em;
-	}
-
-	.Instaopslag_section{
-		padding-top: 2em;
+		background-color: var(--gul-light);
 	}
 
 	.grid-1_1{
@@ -257,11 +258,6 @@ import "../css/global.css"
 	}
 
 	
-
-	.tryllekunstnertext{
-		margin-left: 10em;
-		margin-right: 10em;
-	}
 	.Logo {
 		width: 150px;
 
@@ -275,7 +271,7 @@ import "../css/global.css"
 		cursor:pointer;
 	}
 
-	header ul li:hover {
+	header ul li.item:hover {
 		color: var(--lilla-light);
 		border-bottom: 2px solid var(--lilla-light);
 		padding-bottom: 2px;
@@ -286,6 +282,8 @@ import "../css/global.css"
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		margin-right: 60px;
+		margin-left: 60px;
 	}
 
 	.DonerKnap{
@@ -313,14 +311,11 @@ import "../css/global.css"
 		border-radius: 20px;
 	}
 
-
 	footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		color: white;
-		padding-top: 15em;
-	
 	}
 
 	
@@ -332,12 +327,6 @@ import "../css/global.css"
 
 	.footertext div {
 		text-align: center;
-	}
-
-
-	
-	section {
-		margin-top: 3em;
 	}
 
 	
@@ -454,86 +443,24 @@ import "../css/global.css"
     z-index: 10;}
 
 
+
+.body_grid{
+	margin-left: 240px;
+	margin-right: 240px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+@media (max-width:1200px){
+
+	.body_grid{
+	margin-left: 60px;
+	margin-right: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	}
 	
-.SectionYWbig {
-	background-image: url('/img/SVG/SectionYWbig.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-	object-fit: fill;
-	width: 100vw;
-    height: 1075px; 
-    position: absolute; 
-    top: 860px; 
-    left:0px; 
-    z-index: -1;	
-	opacity: 70%;
-}
-	
-.SectionPRPLbig{
-	background-image: url('/img/SVG/SectionPRPL.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-	object-fit: fill;
-    width: 100vw; 
-    height: 1100px; 
-    position: absolute; 
-    top: 2450px; 
-    left:0px; 
-    z-index: -1;	
-	opacity: 70%;
-}
 
-.SectionYWsmall{
-	background-image: url('/img/SVG/SectionYWsmall.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-	object-fit: fill;
-    width: 100vw; 
-    height: 550px; 
-    position: absolute; 
-    top: 4370px; 
-    left:0px; 
-    z-index: -1;	
-	opacity: 70%;
-}
-
-.SectionPRPLfooter {
-	background-image: url('/img/SVG/SectionPRPLfooter.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-	object-fit: fill;
-    width: 100vw; 
-    height: 1110px; 
-    position: absolute; 
-    top: 5550px; 
-    left:0px; 
-    z-index: -1;	
-	opacity: 70%;
-}
-
-@media (max-width:1500px) {
-	main {
-		margin-left: 190px;
-		margin-right: 190px;
-	}
-
-	section {
-		margin-top: 1em;
-	}
-
-
-}
-
-@media (max-width:1130px){
-	.instaOpslag {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	main {
-		margin-left: 50px;
-		margin-right: 50px;
-	}
 }
 
 @media (max-width:970px) {
@@ -547,33 +474,37 @@ import "../css/global.css"
 		flex-direction: column;
 	}
 
-	.SectionYWbig {
-		height: 1900px;
-		top: 1200px;
-	}
-
-	.SectionPRPLbig {
-		top: 3800px;
-	}
-
 	.Lottie {
 		width: 90vw;
-	}
-
-	.SectionYWsmall {
-		top: 5600px;
 	}
 
 	.SectionPRPLfooter {
 		top: 7450px;
 	}
+
+	.instaOpslag {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	header{
+		margin-left: 20px;
+	}
 }
 
 
 @media (max-width:500px) {
-main {
-	margin: 10px;
-}
+
+	h1 {
+    font-size: var(--font-size-h1-mobile);
+    line-height: var(--line-height-45);
+  }
+
+  h3{
+  font-size: var(--font-size-h2-mobile);
+  line-height: var(--line-height-30);
+  }
+
 
 .Hero_section {
 	display: flex;
@@ -582,11 +513,6 @@ main {
 	align-items: center;
 
 }
-
-h1 {
-font-size: 100px;
-}
-
 
 .grid-1_1 {
 display: flex;
@@ -597,15 +523,6 @@ flex-direction: column;
 .Lottie  {
 	width: 90vw;
 }
-
-.OmTryllekunstnere_section {
-
-}
-
-.tryllekunstnertext{
-		margin-left: 1em;
-		margin-right: 1em;
-	}
 
 	.instaOpslag {
 		display: grid;
@@ -618,20 +535,6 @@ flex-direction: column;
 		padding-top:2em;
 	}
 
-	.SectionYWbig {
-		top: 1050px;
-		height: 1900px;
-	}
-
-	.SectionPRPLbig{
-		top:3800px;
-		height: 1000px;
-	}
-
-	.SectionYWsmall {
-		top: 5450px;
-		height: 800px;
-	}
 
 	.SectionPRPLfooter{
 		top: 7300px;

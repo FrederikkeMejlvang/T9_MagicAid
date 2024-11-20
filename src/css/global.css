@@ -25,10 +25,6 @@ img {
   margin: 60px;
 }
 
-.body_grid {
-  margin: 240px;
-}
-
 .mobile_grid {
   margin: 40px;
 }
@@ -63,8 +59,6 @@ html {
 
 main {
   color: var(--lilla-dark);
-  margin-right: 240px;
-  margin-left: 240px;
 }
 
 body {
@@ -73,13 +67,11 @@ body {
 }
 
 /*Font Family*/
-h1,
-h1.mobile {
+h1 {
   font-family: "Caramel";
 }
 
 h2,
-h2.mobile,
 h3,
 h4,
 p,
@@ -95,36 +87,30 @@ a {
 h1 {
   font-size: var(--font-size-h1);
   line-height: var(--line-height-30);
+  margin-top: 0;
 }
 
 /*Font Size & Weight*/
-h1.mobile {
-  font-size: var(--font-size-h1-mobile);
-  line-height: var(--line-height-45);
-}
 
 h2 {
   font-size: var(--font-size-h2);
   line-height: var(--line-height-96);
   font-weight: 600;
-}
-
-h2.mobile {
-  font-size: var(--font-size-h2-mobile);
-  line-height: var(--line-height-30);
-  font-weight: 600;
+  margin-top: 0;
 }
 
 h3 {
   font-size: var(--font-size-h3);
   line-height: var(--line-height-45);
   font-weight: 600;
+  margin-top: 0;
 }
 
 h4 {
   font-size: var(--font-size-h4);
   line-height: var(--line-height-45);
   font-weight: 600;
+  margin-top: 0;
 }
 
 p {
