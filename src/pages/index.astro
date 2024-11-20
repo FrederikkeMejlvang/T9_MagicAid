@@ -155,6 +155,7 @@ import "../css/global.css"
 		<!-- Footer er lille vektor baggrund -->
 		<footer>
 			<div class="body_grid">
+				<div class="footerflex">
 			<div class="footertext">
 			<div>
 				<h4>Om Os</h4>
@@ -176,7 +177,7 @@ import "../css/global.css"
 				<p>Årsrapport 2022</p>
 			</div>
 		</div>
-		<div class="socialmedia"><img src="/img/SVG/socialmediaicons.svg"/></div>
+		<div class="socialmedia"><img src="/img/SVG/socialmediaicons.svg"/></div></div>
 	</div>
 		</footer>
 	</body>
@@ -315,9 +316,13 @@ import "../css/global.css"
 
 	footer {
 		background-color: var(--lilla-light);
+	}
+
+	.footerflex{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		color: white;
 	}
 
